@@ -1,7 +1,4 @@
 # sms_bomber
-
-Qandoq ishlatsam Boladi
-
 Qandoq O'rnatsam Boladi ?
 
 1: pip install requests
